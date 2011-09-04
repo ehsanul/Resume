@@ -1,0 +1,157 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+% to alter margins
+\usepackage[top=1.8cm,bottom=1.8cm]{geometry} 
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+\usepackage{enumitem}
+%Define packed-list
+\newenvironment{packed-list}{
+  \begin{itemize}[itemsep=1pt,partopsep=0pt]
+    \setlength{\parskip}{0pt}
+    \setlength{\partopsep}{9pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\topsep}{0pt}
+} {\end{itemize}}
+
+\usepackage{setspace}
+\setstretch{1.23}
+
+%Strut spacing - vspace replaces this
+%\newcommand\topstrut{\rule{0pt}{2.6ex}}
+%\newcommand\botstrut{\rule[-1.2ex]{0pt}{0pt}}
+
+
+
+%get rid of vertical spacing
+%    \setlength{\parskip}{0pt}
+%    \setlength{\parsep}{0pt}
+%    \setlength{\headsep}{0pt}
+%    \setlength{\topskip}{0pt}
+  %  \setlength{\topmargin}{0pt}
+ %   \setlength{\topsep}{0pt}
+ %   \setlength{\partopsep}{0pt}
+ %   \setlength{\dbltextfloatsep}{0pt}
+ %   \setlength{\floatsep}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+      {\huge Ehsanul \textsc{Hoque}}\\
+      {\Large \href{mailto:ehsanul@ehsanul.com}{ehsanul@ehsanul.com}}\\
+      {\large (347) 679 9621}
+\vspace{-5pt}\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Objective
+\section{Objective}
+{\fontsize{12}{14}\selectfont  An amazing programming job at an awesome startup.}
+
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}	
+  \textsc{May} 2010 
+    & {\bf Bachelor of Science} in \textsc{Mechanical Engineering}\\
+    & {\it New Jersey Institute of Technology}, Newark, New Jersey\\
+    & {\bf GPA: 3.71}\vspace{3pt}\\
+  \textsc{June} 2006 
+    & {\bf Advanced Level General Certificate of Education } \textsc{(A-Levels)}\\
+    & \emph{\textsc{Examination Board}: Cambridge International Examinations}\\
+    & \textsc{Subjects}: Mathematics, Physics, Economics, Accounting\\
+    & \textsc{Grades}: A in each subject, with {\em national awards} in two\\
+\end{tabular}
+
+\section{Experience}
+\begin{tabular}{rl}
+  \textsc{June 2010 –}
+    & \textbf{Lead Developer and DBA} at \textsc{Vebsite}\\
+   \textsc{March 2011}
+\end{tabular}
+\vspace{-15pt}
+\setitemize{leftmargin=8.65em}
+\begin{packed-list}
+    \item{Data processing on the order of a {\em billion} records} with Ruby
+    \item{Managing several PostgreSQL database servers}
+    \item{Linux server administration}
+  \end{packed-list}
+\setitemize{leftmargin=2.5em}
+
+\vspace{-5pt}
+
+\section{Projects}
+\begin{tabular}{rl}
+\textsc{Xarkon}
+  & Web-based, \emph{real-time} multiplayer game built with Node.js\\
+  & Custom JS game engine, being rewritten in CoffeeScript now\\
+  & Play first version here on Chrome:
+    \href{http://xarkon.com/spaceball.html}{Xarkon Spaceball}\vspace{3pt}\\
+\textsc{Jellly}
+  & Suggests relevant links as you browse the web via bookmarklet/add-on\\
+  & Automatically identifies important keywords to search for related content\\
+  & Backend system built with Ruby and MongoDB
+\end{tabular}
+
+\section{Computer Skills}
+\begin{tabular}{rl}
+\textsc{Programming}
+  & \emph{Proficient} in \textsc{Ruby} and \textsc{JavaScript}\\
+  & Familiar with \textsc{CoffeeScript, Python, Bash, PHP, Matlab} and \textsc{C}\\
+  & Currently Learning \textsc{Scheme} and \textsc{Common Lisp}\\
+\textsc{Markup}
+  & {\fb \LaTeX}, \textsc{HTML}, \textsc{XHTML}, \textsc{CSS}, \textsc{MarkDown}\\
+\textsc{Operating Systems}
+  & \textsc{Linux} (various distributions), \textsc{Windows} (3.11 and above)\\
+\textsc{Databases}
+  & \textsc{PostgreSQL}, \textsc{MongoDB}, \textsc{MySQL}\\
+\end{tabular}
+
+%Section: Scholarships and additional info
+\section{Societies and Awards}
+\vspace{3pt}
+\begin{packed-list}
+  \item\textsc{Albert Dorman Honors College}
+  \item\textsc{International Student Presidential Scholarship} at NJIT
+  \item\textsc{Phi Eta Sigma} National Honors Society
+  \item\textsc{Two Certificates of Excellence} from \textsc{Cambridge
+    University} for the \emph{highest marks obtained nationally} in both
+    \textsc{Mathematics} and \textsc{Economics} in Saudi Arabia in the
+    \textsc{A-Levels Final Exam}, June 2006
+\end{packed-list}
+
+\end{document}
+
