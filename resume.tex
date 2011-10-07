@@ -25,8 +25,9 @@
 
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{3pt}{3pt}
+%\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{\color{Orange}}
+\titlespacing{\section}{0pt}{5pt}{-3pt}
 %Tweak a bit the top margin
 %\addtolength{\voffset}{-1.3cm}
 
@@ -36,7 +37,8 @@
 \usepackage{enumitem}
 %Define packed-list
 \newenvironment{packed-list}{
-  \begin{itemize}[itemsep=1pt,partopsep=0pt]
+  \vspace{2pt}
+  \begin{itemize}[itemsep=1pt,partopsep=0pt,leftmargin=1.5em]
     \setlength{\parskip}{0pt}
     \setlength{\partopsep}{9pt}
     \setlength{\parsep}{0pt}
@@ -44,7 +46,12 @@
 } {\end{itemize}}
 
 \usepackage{setspace}
-\setstretch{1.23}
+\setstretch{1.13}
+
+\usepackage{pbox}
+
+\newfontfamily\arial{Arial}\fontsize{12}{14}\selectfont
+
 
 %Strut spacing - vspace replaces this
 %\newcommand\topstrut{\rule{0pt}{2.6ex}}
@@ -71,20 +78,119 @@
 \font\fb=''[cmr10]'' %for use with \LaTeX command
 
 %--------------------TITLE-------------
-\par{\centering
-      {\huge Ehsanul \textsc{Hoque}}\\
-      {\Large \href{mailto:ehsanul@ehsanul.com}{ehsanul@ehsanul.com}}\\
-      {\large (347) 679 9621}
-\vspace{-5pt}\par}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} lr}
+      {\color{Gray!50!black}\Huge \textsc{Ehsanul Hoque}}
+      & \pbox{20cm}{
+          {\large \href{mailto:ehsanul@ehsanul.com}{ehsanul@ehsanul.com}}\\
+          \hspace*{\fill}{\large (347) 679 9621}\\
+        }\\
+\end{tabular*}
 
 %--------------------SECTIONS-----------------------------------
 %Section: Objective
-\section{Objective}
-{\fontsize{12}{14}\selectfont  An amazing programming job at an awesome startup.}
+\section{Profile}
+{\fontsize{12}{14}\selectfont  
+  I'm a web developer and generalist, with a passion for startups.
+  I'm quick to learn and my skills range from game programming
+  to query optimization.  }
+
+
+\section{Projects}
+\begin{tabular}{p{0.1\textwidth}p{0.85\textwidth}}
+  \hfill \textbf{Jellly}
+    & Suggests relevant links as you browse the web, via bookmarklet/add-on\\
+    &  Works by \emph{automatically extracting keywords} to search for related content\\
+    & Website: \href{http://jellly.com/}{http://jellly.com/} 
+    \begin{packed-list}
+      \item{ Sole \emph{technical co-founder} }
+      \item{ Integrated Java machine learning tools (via JRuby/Sinatra) with client-side unsupervised keyword extraction algorithms for \emph{superior} keywords}
+      \item{ Tuned scoring algorithms for ranking the results from various sources }
+    \end{packed-list}
+    \vspace{-5pt}
+    \\
+  \hfill \textsc{Xarkon}
+    & \emph{Real-time}, physics-based MMO game built with Node.js\\
+    & Play the original JS prototype on Chrome:
+           \href{http://xarkon.com/spaceball.html}{http://xarkon.com/spaceball.html}
+    \begin{packed-list}
+      \item{ Wrote a components library for non-heirarchical code-sharing }
+      \item{ Custom game engine, written in CoffeeScript }
+    \end{packed-list}
+    \\
+\end{tabular}
+\vspace{-25pt}
+
+
+\section{Experience}
+\begin{tabular}{p{0.12\textwidth}p{0.78\textwidth}}
+  \textsc{2010 – 2011}
+    & \textbf{Lead Developer and DBA} at \textsc{Vebsite}
+    \begin{packed-list}
+      \item{Data processing on the order of a {\em billion} records with Ruby}
+      \item{Managed several PostgreSQL database servers}
+      \item{Miscellaneous PHP programming and Linux server administration}
+    \end{packed-list}
+    \\
+\end{tabular}
+\vspace{-15pt}
+
+
+%\section{Skills Matrix}
+%  \begin{minipage}[b]{0.34\linewidth}\centering
+%    Programming Languages\\
+%    \begin{tabular}[t]{rl}
+%      \textsc{Ruby}
+%      & {\arial ●●●●●●●○}\\
+%      \textsc{Javascript}
+%      & {\arial ●●●●●●●○}\\
+%      \textsc{Common Lisp}
+%      & {\arial ●○○○○○○○}\\
+%      \textsc{Scheme}
+%      & {\arial ●○○○○○○○}\\
+%    \end{tabular}
+%  \end{minipage}
+%  \begin{minipage}[b]{0.34\linewidth}\centering
+%    Operating Systems\\
+%    \begin{tabular}[t]{rl}
+%      \textsc{Linux}
+%      & {\arial ●●●●●●●○}\\
+%      \textsc{BSD}
+%      & {\arial ●○○○○○○○}\\
+%      \textsc{Windows}
+%      & {\arial ●○○○○○○○}\\
+%    \end{tabular}
+%  \end{minipage}
+%  \begin{minipage}[b]{0.34\linewidth}\centering
+%    Programming Languages\\
+%    \begin{tabular}[t]{rl}
+%      \textsc{Common Lisp}
+%      & {\arial ●○○○○○○○}\\
+%      \textsc{Scheme}
+%      & {\arial ●○○○○○○○}\\
+%    \end{tabular}
+%  \end{minipage}
+
+
+\section{Technical Skills}
+  \begin{tabular}{rl}
+    \textsc{Programming}
+      & \emph{Proficient} in \textsc{Ruby} and \textsc{JavaScript}\\
+      & Experienced with \textsc{Python, PHP, Scheme} and Bash scripting\\
+    \textsc{Markup}
+      & {\fb \LaTeX}, \textsc{HTML}, \textsc{XHTML}, \textsc{CSS}, \textsc{MarkDown}\\
+    \textsc{Databases}
+      & \textsc{PostgreSQL}, \textsc{MongoDB}, \textsc{MySQL}\\
+    \textsc{Sys Admin}
+      & 3 year's experience remotely managing Linux (Ubuntu/CentOS) servers\\
+      & Comfortable with command-line tools and troubleshooting server issues\\
+      %& Experienced with tasks such as automating deployment, configuring web\\
+      %& servers and databases, automating backups, etc
+  \end{tabular}
+
 
 %Section: Education
 \section{Education}
-\begin{tabular}{rl}	
+\begin{tabular}{rl}
   \textsc{May} 2010 
     & {\bf Bachelor of Science} in \textsc{Mechanical Engineering}\\
     & {\it New Jersey Institute of Technology}, Newark, New Jersey\\
@@ -96,61 +202,18 @@
     & \textsc{Grades}: A in each subject, with {\em national awards} in two\\
 \end{tabular}
 
-\section{Experience}
-\begin{tabular}{rl}
-  \textsc{June 2010 –}
-    & \textbf{Lead Developer and DBA} at \textsc{Vebsite}\\
-   \textsc{March 2011}
-\end{tabular}
-\vspace{-15pt}
-\setitemize{leftmargin=8.65em}
-\begin{packed-list}
-    \item{Data processing on the order of a {\em billion} records} with Ruby
-    \item{Managing several PostgreSQL database servers}
-    \item{Linux server administration}
-  \end{packed-list}
-\setitemize{leftmargin=2.5em}
-
-\vspace{-5pt}
-
-\section{Projects}
-\begin{tabular}{rl}
-\textsc{Xarkon}
-  & Web-based, \emph{real-time} multiplayer game built with Node.js\\
-  & Custom JS game engine, being rewritten in CoffeeScript now\\
-  & Play first version here on Chrome:
-    \href{http://xarkon.com/spaceball.html}{Xarkon Spaceball}\vspace{3pt}\\
-\textsc{Jellly}
-  & Suggests relevant links as you browse the web via bookmarklet/add-on\\
-  & Automatically identifies important keywords to search for related content\\
-  & Backend system built with Ruby and MongoDB
-\end{tabular}
-
-\section{Computer Skills}
-\begin{tabular}{rl}
-\textsc{Programming}
-  & \emph{Proficient} in \textsc{Ruby} and \textsc{JavaScript}\\
-  & Familiar with \textsc{CoffeeScript, Python, Bash, PHP, Matlab} and \textsc{C}\\
-  & Currently Learning \textsc{Scheme} and \textsc{Common Lisp}\\
-\textsc{Markup}
-  & {\fb \LaTeX}, \textsc{HTML}, \textsc{XHTML}, \textsc{CSS}, \textsc{MarkDown}\\
-\textsc{Operating Systems}
-  & \textsc{Linux} (various distributions), \textsc{Windows} (3.11 and above)\\
-\textsc{Databases}
-  & \textsc{PostgreSQL}, \textsc{MongoDB}, \textsc{MySQL}\\
-\end{tabular}
 
 %Section: Scholarships and additional info
 \section{Societies and Awards}
 \vspace{3pt}
 \begin{packed-list}
-  \item\textsc{Albert Dorman Honors College}
   \item\textsc{International Student Presidential Scholarship} at NJIT
+  \item\textsc{Albert Dorman Honors College}
   \item\textsc{Phi Eta Sigma} National Honors Society
-  \item\textsc{Two Certificates of Excellence} from \textsc{Cambridge
+  \item Two \textsc{Certificates of Excellence} from \textsc{Cambridge
     University} for the \emph{highest marks obtained nationally} in both
     \textsc{Mathematics} and \textsc{Economics} in Saudi Arabia in the
-    \textsc{A-Levels Final Exam}, June 2006
+    \textsc{A-Levels Final Exam}
 \end{packed-list}
 
 \end{document}
