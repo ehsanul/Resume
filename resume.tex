@@ -10,6 +10,8 @@
 % an alternative to Layaureo can be ** \usepackage{fullpage} **
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
+% to change titles font family
+\usepackage{titling}
 
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
@@ -22,11 +24,12 @@
 %FONTS
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[SmallCapsFont = Fontin-SmallCaps]{Fontin-Regular}
+\newfontfamily\headingfont[]{Open Sans}
 
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 %\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{\color{Orange}}
+\titleformat{\section}{\LARGE\scshape\raggedright\headingfont}{}{0em}{\color{Orange}}
 \titlespacing{\section}{0pt}{5pt}{-3pt}
 %Tweak a bit the top margin
 %\addtolength{\voffset}{-1.3cm}
@@ -49,9 +52,6 @@
 \setstretch{1.13}
 
 \usepackage{pbox}
-
-\newfontfamily\arial{DejaVu Sans}\fontsize{12}{14}\selectfont
-
 
 %Strut spacing - vspace replaces this
 %\newcommand\topstrut{\rule{0pt}{2.6ex}}
@@ -82,128 +82,120 @@
       {\color{Gray!50!black}\Huge \textsc{Ehsanul Hoque}}
       & \pbox{20cm}{
           {\large \href{mailto:ehsanul@ehsanul.com}{ehsanul@ehsanul.com}}\\
-          \hspace*{\fill}{\large (347) 679 9621}\\
+          \hspace*{\fill}{\large (415) 494-1172}\\
         }\\
 \end{tabular*}
 
 %--------------------SECTIONS-----------------------------------
-%Section: Objective
 \section{Profile}
 {\fontsize{12}{14}\selectfont  
-  I'm a web developer and generalist, with a passion for startups.
-  I'm quick to learn and my skills range from game programming
-  to query optimization.  }
+  %Full-stack software engineer and generalist, looking to lead a challenging
+  %project in an engineering-centric environment.}
+  Full-stack software engineer and generalist, looking to lead a challenging
+  project with an experienced team.}
+
+
+\section{Highlights}
+  \begin{packed-list}
+    \item{ Technical design and implementation of an enterprise-ready, single-page web application and backend }
+    \item{ Involved in gathering requirements from end users, and solving for their needs by working closely with product owners and designers }
+    \item{ Technical leadership, focused on improving engineering processes and software quality }
+    \item{ Devops, from setting up AWS infrastructure and monitoring to debugging production issues and putting out fires }
+    \item{ Hiring and mentoring, from interns to senior engineers }
+  \end{packed-list}
+
+
+\section{Technical Skills}
+  \begin{packed-list}
+    \item{ Strong: Ruby, Ruby on Rails, MySQL, JavaScript, AngularJS and Angular }
+    \item{ Experienced: TypeScript, React, Docker, terraform, Linux, HTML, CSS, bash, Rust }
+    \item{ Dabbled: Python, Java, C++, PHP }
+  \end{packed-list}
+
+
+\section{Experience}
+\begin{tabular}{p{0.12\textwidth}p{0.78\textwidth}}
+  \textsc{2011 – Now}
+    & \textbf{Tech Lead} at \textsc{MyTime}
+    \begin{packed-list}
+      \item{ First engineer at MyTime }
+      \item{ Helped build the entire application from the ground up }
+      \item{ Modeled core domain for scheduling and online booking products }
+      \item{ Architected and lead development of MyTime's Point of Sale product }
+      \item{ Extracted payment processing into a separate service, abstracting multiple payment gateways }
+      \item{ Designed foundational architecture and client-side ORM for a scalable frontend web application in AngularJS }
+      \item{ Designed a more robust data import system, ensuring a smooth onboarding process for businesses }
+      \item{ Introduced mandatory code reviews, and helped ingrain a culture of writing unit/integration testing for all new business logic }
+      \item{ Performance optimizations, eg implemented a hot loop in a Ruby extension for a 30x speedup }
+      \item{ Supported engineering and customer service teams, unblocking team members in any way necessary }
+    \end{packed-list}
+    \vspace{-5pt}
+    \\
+  \textsc{2010 – 2011}
+    & \textbf{Lead Developer and DBA} at \textsc{Vebsite}
+    \begin{packed-list}
+      \item{Data processing on the order of a {\em billion} records with Ruby}
+      \item{PHP programming, Linux server administration and PostgreSQL database management}
+    \end{packed-list}
+\end{tabular}
+\vspace{-15pt}
 
 
 \section{Projects}
 \begin{tabular}{p{0.1\textwidth}p{0.85\textwidth}}
-  \hfill \textbf{Jellly}
-    & Suggests relevant links as you browse the web, via bookmarklet/add-on\\
-    &  Works by \emph{automatically extracting keywords} to search for related content\\
-    & Website: \href{http://jellly.com/}{http://jellly.com/} 
+  \hfill \textbf{Brick}
+    & Bot that plays Rocket League, a multi-player physics-based car soccer game\\
+    & Repository: \href{https://github.com/ehsanul/brick}{https://github.com/ehsanul/brick} 
     \begin{packed-list}
-      \item{ Sole \emph{technical co-founder} }
-      \item{ Integrated Java machine learning tools (via JRuby/Sinatra) with client-side unsupervised keyword extraction algorithms for \emph{superior} keywords}
-      \item{ Tuned scoring algorithms for ranking the results from various sources }
+      \item{ Built using Rust }
+      \item{ Reverse-engineered and simulated physics of the game for prediction }
+      \item{ Implemented and extended hybrid A* algorithm for move planning }
     \end{packed-list}
     \vspace{-5pt}
     \\
-  \hfill \textsc{Xarkon}
-    & \emph{Real-time}, physics-based MMO game built with Node.js\\
-    & Play the original JS prototype on Chrome:
-           \href{http://xarkon.com/spaceball.html}{http://xarkon.com/spaceball.html}
+  \hfill \textbf{Jellly}
+    & {\em Retired}: Suggested relevant links as you browse the web, via bookmarklet/add-on\\
+    & Worked by \emph{automatically extracting keywords} to search for related content
     \begin{packed-list}
-      \item{ Wrote a components library for non-hierarchical code-sharing }
-      \item{ Custom game engine, written in CoffeeScript }
+      \item{ Sole \emph{technical co-founder} }
+      \item{ Created an ensemble of multiple keyword extraction algorithms to detect better keywords}
+      \item{ Tuned scoring algorithms for ranking search results from various sources }
     \end{packed-list}
+    \vspace{-5pt}
     \\
 \end{tabular}
 \vspace{-25pt}
 
 
-\section{Experience}
-\begin{tabular}{p{0.12\textwidth}p{0.78\textwidth}}
-  \textsc{2010 – 2011}
-    & \textbf{Lead Developer and DBA} at \textsc{Vebsite}
-    \begin{packed-list}
-      \item{Data processing on the order of a {\em billion} records with Ruby}
-      \item{Managed several PostgreSQL database servers}
-      \item{Miscellaneous PHP programming and Linux server administration}
-    \end{packed-list}
+\section{Open Source}
+\begin{tabular}{p{0.2\textwidth}p{0.80\textwidth}}
+  \hfill \textbf{ \href{https://www.graalvm.org/reference-manual/ruby/}{TruffleRuby} }
+    & Implemented missing BigDecimal methods: \href{https://github.com/oracle/truffleruby/commit/dbacbc96ff07bb774a54b3883b35e74d2fb52708}{Commit}
+    \vspace{-5pt}
+    \\
+  \hfill \textbf{ \href{https://github.com/RLBot/rlbot-rust}{rlbot-rust} }
+    & Added support for flatbuffers-based foreign functions: \href{https://github.com/RLBot/rlbot-rust/pull/1}{Pull Request}
+    \vspace{-5pt}
+    \\
+  \hfill \textbf{ \href{https://radicale.org/}{Radicale} }
+    & Added support for http-based authentication: \href{https://github.com/Kozea/Radicale/pull/15}{Pull Request}
+    \vspace{-5pt}
+    \\
+  \hfill \textbf{ \href{https://github.com/ehsanul/rust-ws}{rust-ws} }
+    & {\em Retired}: Early WebSockets implementation in Rust
+    \vspace{-5pt}
     \\
 \end{tabular}
-\vspace{-15pt}
 
 
-%\section{Skills Matrix}
-%  \begin{minipage}[b]{0.34\linewidth}\centering
-%    Programming Languages\\
-%    \begin{tabular}[t]{rl}
-%      \textsc{Ruby}
-%      & {\arial ●●●●●●●○}\\
-%      \textsc{Javascript}
-%      & {\arial ●●●●●●●○}\\
-%      \textsc{Common Lisp}
-%      & {\arial ●○○○○○○○}\\
-%      \textsc{Scheme}
-%      & {\arial ●○○○○○○○}\\
-%    \end{tabular}
-%  \end{minipage}
-%  \begin{minipage}[b]{0.34\linewidth}\centering
-%    Operating Systems\\
-%    \begin{tabular}[t]{rl}
-%      \textsc{Linux}
-%      & {\arial ●●●●●●●○}\\
-%      \textsc{BSD}
-%      & {\arial ●○○○○○○○}\\
-%      \textsc{Windows}
-%      & {\arial ●○○○○○○○}\\
-%    \end{tabular}
-%  \end{minipage}
-%  \begin{minipage}[b]{0.34\linewidth}\centering
-%    Programming Languages\\
-%    \begin{tabular}[t]{rl}
-%      \textsc{Common Lisp}
-%      & {\arial ●○○○○○○○}\\
-%      \textsc{Scheme}
-%      & {\arial ●○○○○○○○}\\
-%    \end{tabular}
-%  \end{minipage}
-
-
-\section{Technical Skills}
-  \begin{tabular}{rl}
-    \textsc{Programming}
-      & \emph{Proficient} in \textsc{Ruby} and \textsc{JavaScript}\\
-      & Experienced with \textsc{Python, PHP, Scheme} and Bash scripting\\
-    \textsc{Markup}
-      & {\fb \LaTeX}, \textsc{HTML}, \textsc{XHTML}, \textsc{CSS}, \textsc{MarkDown}\\
-    \textsc{Databases}
-      & \textsc{PostgreSQL}, \textsc{MongoDB}, \textsc{MySQL}\\
-    \textsc{Sys Admin}
-      & 3 year's experience remotely managing Linux (Ubuntu/CentOS) servers\\
-      & Comfortable with command-line tools and troubleshooting server issues\\
-      %& Experienced with tasks such as automating deployment, configuring web\\
-      %& servers and databases, automating backups, etc
-  \end{tabular}
-
-
-%Section: Education
 \section{Education}
 \begin{tabular}{rl}
   \textsc{May} 2010 
     & {\bf Bachelor of Science} in \textsc{Mechanical Engineering}\\
     & {\it New Jersey Institute of Technology}, Newark, New Jersey\\
-    & {\bf GPA: 3.71}\vspace{3pt}\\
-  \textsc{June} 2006 
-    & {\bf Advanced Level General Certificate of Education } \textsc{(A-Levels)}\\
-    & \emph{\textsc{Examination Board}: Cambridge International Examinations}\\
-    & \textsc{Subjects}: Mathematics, Physics, Economics, Accounting\\
-    & \textsc{Grades}: A in each subject, with {\em national awards} in two\\
 \end{tabular}
 
 
-%Section: Scholarships and additional info
 \section{Societies and Awards}
 \vspace{3pt}
 \begin{packed-list}
