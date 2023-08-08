@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-sudo apt-get install texlive-xetex
+sudo apt-get install make texlive-xetex fonts-open-sans texlive-fonts-recommended
 
 # download fontin
 wget http://www.exljbris.com/dl/fontin2_pc.zip
