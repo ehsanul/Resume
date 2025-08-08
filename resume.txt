@@ -1,65 +1,85 @@
 EHSANUL HOQUE
 
 ehsanul@ehsanul.com
-(347) 679 9621
-
+(415) 494 1172
 
 PROFILE
 
-I'm a web developer and generalist, with a passion for startups. I'm quick to
-learn and my skills range from game programming to query optimization.
+Full-stack software engineer and generalist, looking to lead a challenging
+project with an experienced team.
 
+HIGHLIGHTS
 
-PROJECTS
-
-Jellly
-  Suggests relevant links as you browse the web, via bookmarklet/add-on
-  Works by automatically extracting keywords to search for related content
-  Website: http://jellly.com/
-  • Sole technical co-founder
-  • Integrated Java machine learning tools (via JRuby/Sinatra) with client-side
-    unsupervised keyword extraction algorithms for superior keywords
-  • Tuned scoring algorithms for ranking the results from various sources
-
-Xarkon
-  Real-time, physics-based MMO game built with Node.js
-  Play the original JS prototype on Chrome: http://xarkon.com/spaceball.html
-  • Wrote a components library for non-hierarchical code-sharing
-  • Custom game engine, written in CoffeeScript
-
-
-EXPERIENCE
-
-  Lead Developer and DBA at Vebsite (2010 – 2011)
-    • Data processing on the order of a billion records with Ruby
-    • Managed several PostgreSQL database servers
-    • Miscellaneous PHP programming and Linux server administration
-
+  • Technical design and implementation of an enterprise-ready, single-page web application and backend
+  • Technical design and implementation of Financial risk detection and mitigation systems
+  • Involved in gathering requirements from end users or internal stakeholders, and solving for their needs by working closely with product owners
+  • Technical leadership, focused on improving engineering processes and software quality
+  • Cross-organizational alignment on technical architecture, direction and strategy
+  • Hiring and mentoring, from interns to senior engineers
 
 TECHNICAL SKILLS
 
-  Programming   Proficient in Ruby and JavaScript
-                Experienced with Python, PHP, Scheme and Bash scripting
-       Markup   LaTeX, HTML, XHTML, CSS, MarkDown
-    Databases   PostgreSQL, MongoDB, MySQL
-    Sys Admin   3 year's experience remotely managing Linux servers
-                Comfortable with command-line tools and server troubleshooting
+  Strong       Ruby, Ruby on Rails, MySQL, JavaScript, AngularJS and Angular
+  Experienced  Java, Kotlin, TypeScript, React, Docker, terraform, Linux, HTML, CSS, bash, Rust
+  Dabbled      Python, C++, PHP
 
+EXPERIENCE
 
-SOCIETIES AND AWARDS
+Senior Software Engineer at Remitly (2021 – Now)
+  • Worked on identity verification and fraud (i.e. Trust), with a focus on detection and mitigation
+  • My departments's focus was on reducing customer friction while meeting regulatory requirements and fraud loss guardrails
+  • Helped develop a strong engineering culture by introducing processes to drive technical excellence
+  • Took on the role of "Single Threaded Leader" for the new "Trust Platform", to enable the company's multi-product strategy
+  • Architected the Trust Platform and its interaction model with platform tenants
+  • Aligned all aspects of the Trust Platform with both technical and non-technical stakeholders across the origanization
+  • Selected to be a member of the Remitly Architecture Steering Group, to help drive technical direction across Remitly
 
-  • Albert Dorman Honors College
-  • International Student Presidential Scholarship at NJIT
-  • Two national awards from Cambridge University for the highest marks obtained
-    in both Mathematics and Economics in Saudi Arabia in the A-Levels Final Exam
+Tech Lead at MyTime (2011 – 2021)
+  • I was the first employee, and helped build the entire application from the ground up
+  • Modeled core domain for scheduling and online booking products
+  • Architected and lead development of MyTime's Point of Sale product
+  • Extracted payment processing into a separate service, abstracting multiple payment gateways
+  • Designed foundational architecture and client-side ORM for a scalable frontend web application in AngularJS
+  • Designed a more robust data import system, ensuring a smooth onboarding process for businesses
+  • Introduced mandatory code reviews, and helped ingrain a culture of writing unit/integration testing for all new business logic
+  • Performance optimizations, eg implemented a hot loop in a Ruby extension for a 30x speedup
+  • Supported engineering and customer service teams, unblocking team members in any way necessary
 
+Lead Developer and DBA at Vebsite (2010 – 2011)
+  • Data processing on the order of a billion records with Ruby
+  • PHP programming, Linux server administration and PostgreSQL database management
+
+PROJECTS
+
+Brick
+  Bot that plays Rocket League, a multi-player physics-based car soccer game
+  Repository: https://github.com/ehsanul/brick
+  • Built using Rust
+  • Reverse-engineered and simulated physics of the game for prediction
+  • Implemented and extended hybrid A* algorithm for move planning
+
+Jellly
+  Retired: Suggested relevant links as you browse the web, via bookmarklet/add-on
+  Worked by automatically extracting keywords to search for related content
+  • Sole technical co-founder
+  • Created an ensemble of multiple keyword extraction algorithms to detect better keywords
+  • Tuned scoring algorithms for ranking search results from various sources
+
+OPEN SOURCE
+
+  • TruffleRuby — Implemented missing BigDecimal methods: https://github.com/oracle/truffleruby/commit/dbacbc96ff07bb774a54b3883b35e74d2fb52708
+  • rlbot-rust — Added support for flatbuffers-based foreign functions: https://github.com/RLBot/rlbot-rust/pull/1
+  • Radicale — Added support for http-based authentication: https://github.com/Kozea/Radicale/pull/15
+  • rust-ws — Retired: Early WebSockets implementation in Rust
 
 EDUCATION
 
-   May 2010   Bachelor of Science in Mechanical Engineering
-                New Jersey Institute of Technology, Newark, New Jersey
-                GPA: 3.71
-  June 2006   Advanced Level General Certificate of Education (A-Levels)
-                Examination Board: Cambridge International Examinations
-                Subjects: Mathematics, Physics, Economics, Accounting
-                Grades: A in each subject
+  May 2010   Bachelor of Science in Mechanical Engineering
+             New Jersey Institute of Technology, Newark, New Jersey
+
+SOCIETIES AND AWARDS
+
+  • International Student Presidential Scholarship at NJIT
+  • Albert Dorman Honors College
+  • Phi Eta Sigma National Honors Society
+  • Two Certificates of Excellence from Cambridge University for the highest marks obtained nationally in both Mathematics and Economics in Saudi Arabia in the A-Levels Final Exam
