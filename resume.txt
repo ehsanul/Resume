@@ -26,7 +26,7 @@ Currently *very* excited by the agentic AI space.
   immediate product needs
 • **System Design & Architecture**: Designs and leads development of complex
   distributed systems serving millions of users
-• **Agentic AI**: Concieved of and built Sidekick ahead of the agentic AI coding
+• **Agentic AI**: Conceived of and built Sidekick ahead of the agentic AI coding
   wave, achieving performance competitive with the latest commercial tools
 
 ## Experience
@@ -44,7 +44,7 @@ Senior Software Engineer (2021 – 2023)
     technical excellence
 
 Staff Software Engineer (2023 – Now)
-  • Architected and lead development of Remitly's Trust Platform to support all
+  • Architected and led development of Remitly's Trust Platform to support all
     fraud and compliance use cases across all Remitly product lines, while
     defining the system architecture underlying 7 teams.
   • Balanced long-term platform adoption goals with short-term product needs
@@ -60,7 +60,7 @@ Staff Software Engineer (2023 – Now)
 ### MyTime (2011 - 2021)
 
 MyTime is a startup providing a one-stop shop for operating enterprise
-appoinment-based businesses. I was the first employee, and helped build and
+appointment-based businesses. I was the first employee, and helped build and
 deliver the entire application from the ground up, from devops to frontend.
 
 Founding Engineer (2011 – 2015)
@@ -86,10 +86,10 @@ Lead Developer and DBA
 
 ## Technical Skills
 
-  Recent   Golang, Java, Kotlin, TypeScript, Vue, DynamoDB, Redis, SQlite,
+  Recent   Golang, Java, Kotlin, TypeScript, Vue, DynamoDB, Redis, SQLite,
            MySQL, Docker
-  Rusty    Rust (ahem), React, Ruby, Ruby on Rails, JavaScript, HTML, CSS,
-           Angular, PostgreSQL, terraform, Linux
+  Rusty    Rust, React, Ruby, Ruby on Rails, JavaScript, HTML, CSS, Angular,
+           PostgreSQL, terraform, Linux
   Ad-hoc   Python, PHP, bash, C++
 
 ## Projects
