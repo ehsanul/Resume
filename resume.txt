@@ -1,85 +1,166 @@
-EHSANUL HOQUE
+# Ehsanul Hoque
 
-ehsanul@ehsanul.com
-(415) 494 1172
+## Contact
 
-PROFILE
+Based in Seattle, WA.
 
-Full-stack software engineer and generalist, looking to lead a challenging
-project with an experienced team.
+  Email   ehsanul@ehsanul.com
+  Phone   (415) 494-1172
 
-HIGHLIGHTS
+Phone calls are strongly preferred.
 
-  • Technical design and implementation of an enterprise-ready, single-page web application and backend
-  • Technical design and implementation of Financial risk detection and mitigation systems
-  • Involved in gathering requirements from end users or internal stakeholders, and solving for their needs by working closely with product owners
-  • Technical leadership, focused on improving engineering processes and software quality
-  • Cross-organizational alignment on technical architecture, direction and strategy
-  • Hiring and mentoring, from interns to senior engineers
+## Profile
 
-TECHNICAL SKILLS
+Generalist software engineer with 15 years of experience shipping products.
+Currently *very* excited by the agentic AI space.
 
-  Strong       Ruby, Ruby on Rails, MySQL, JavaScript, AngularJS and Angular
-  Experienced  Java, Kotlin, TypeScript, React, Docker, terraform, Linux, HTML, CSS, bash, Rust
-  Dabbled      Python, C++, PHP
+## Highlights
 
-EXPERIENCE
+• **Problem-Solving**: Thrives on solving novel problems through creative
+  experimentation, perseverance, and a deep-seated drive to optimize
+• **End-to-End Product Engineering**: Takes products from conception to
+  production by gathering and defining requirements, and implementing across the
+  full stack
+• **Technical Leadership**: Drives cross-organizational alignment and navigates
+  complex technical and business tradeoffs to balance long-term goals with
+  immediate product needs
+• **System Design & Architecture**: Designs and leads development of complex
+  distributed systems serving millions of users
+• **Agentic AI**: Concieved of and built Sidekick ahead of the agentic AI coding
+  wave, achieving performance competitive with the latest commercial tools
 
-Senior Software Engineer at Remitly (2021 – Now)
-  • Worked on identity verification and fraud (i.e. Trust), with a focus on detection and mitigation
-  • My departments's focus was on reducing customer friction while meeting regulatory requirements and fraud loss guardrails
-  • Helped develop a strong engineering culture by introducing processes to drive technical excellence
-  • Took on the role of "Single Threaded Leader" for the new "Trust Platform", to enable the company's multi-product strategy
-  • Architected the Trust Platform and its interaction model with platform tenants
-  • Aligned all aspects of the Trust Platform with both technical and non-technical stakeholders across the origanization
-  • Selected to be a member of the Remitly Architecture Steering Group, to help drive technical direction across Remitly
+## Experience
 
-Tech Lead at MyTime (2011 – 2021)
-  • I was the first employee, and helped build the entire application from the ground up
-  • Modeled core domain for scheduling and online booking products
-  • Architected and lead development of MyTime's Point of Sale product
-  • Extracted payment processing into a separate service, abstracting multiple payment gateways
-  • Designed foundational architecture and client-side ORM for a scalable frontend web application in AngularJS
-  • Designed a more robust data import system, ensuring a smooth onboarding process for businesses
-  • Introduced mandatory code reviews, and helped ingrain a culture of writing unit/integration testing for all new business logic
-  • Performance optimizations, eg implemented a hot loop in a Ruby extension for a 30x speedup
-  • Supported engineering and customer service teams, unblocking team members in any way necessary
+### Remitly (2021 - Now)
 
-Lead Developer and DBA at Vebsite (2010 – 2011)
+Remitly is a public fintech company that specializes in consumer cross-border
+remittances. I initially worked in the risk (fraud + compliance) space,
+eventually leading it before moving on to other cross-org initiatives.
+
+Senior Software Engineer (2021 – 2023)
+  • Designed and launched full-stack solutions to meet compliance requirements,
+    while minimizing customer friction and maintaining fraud loss guardrails
+  • Built a strong engineering culture by introducing processes that drive
+    technical excellence
+
+Staff Software Engineer (2023 – Now)
+  • Architected and lead development of Remitly's Trust Platform to support all
+    fraud and compliance use cases across all Remitly product lines, while
+    defining the system architecture underlying 7 teams.
+  • Balanced long-term platform adoption goals with short-term product needs
+  • Drove technical direction across Remitly as part of its Architecture
+    Steering Group
+  • Architected Remitly's Authorization Platform to support fine-grained
+    resource-level authorization across 700+ microservices
+  • Single-handedly drove initial adoption of AI-based development tools by
+    instituting guardrails to address enterprise risk & legal concerns, and
+    developing a program to onboard & train 400+ engineers across the company
+  • Formed team to pursue increases in product development velocity via AI
+
+### MyTime (2011 - 2021)
+
+MyTime is a startup providing a one-stop shop for operating enterprise
+appoinment-based businesses. I was the first employee, and helped build and
+deliver the entire application from the ground up, from devops to frontend.
+
+Founding Engineer (2011 – 2015)
+  • Defined product requirements in collaboration with CEO/founder
+  • Designed and shipped core scheduling and online booking products
+  • Introduced mandatory code reviews, and helped ingrain a culture of writing
+    unit/integration testing for all new business logic
+  • Performance optimizations, eg implemented a hot loop in a Rust extension for
+    Ruby, netting a 30x speedup
+
+Tech Lead (2015 – 2021)
+  • Lead the North American development team of ~10 engineers, acting as
+    the top-level engineering escalation point under CEO
+  • Worked directly with enterprise clients to gather and refine requirements
+  • Designed and shipped a single-page web application for multiple products
+  • Designed and shipped MyTime's Point of Sale product
+
+### Vebsite (2010 – 2011)
+
+Lead Developer and DBA
   • Data processing on the order of a billion records with Ruby
   • PHP programming, Linux server administration and PostgreSQL database management
 
-PROJECTS
+## Technical Skills
 
-Brick
-  Bot that plays Rocket League, a multi-player physics-based car soccer game
-  Repository: https://github.com/ehsanul/brick
-  • Built using Rust
-  • Reverse-engineered and simulated physics of the game for prediction
-  • Implemented and extended hybrid A* algorithm for move planning
+  Recent   Golang, Java, Kotlin, TypeScript, Vue, DynamoDB, Redis, SQlite,
+           MySQL, Docker
+  Rusty    Rust (ahem), React, Ruby, Ruby on Rails, JavaScript, HTML, CSS,
+           Angular, PostgreSQL, terraform, Linux
+  Ad-hoc   Python, PHP, bash, C++
 
-Jellly
-  Retired: Suggested relevant links as you browse the web, via bookmarklet/add-on
-  Worked by automatically extracting keywords to search for related content
-  • Sole technical co-founder
-  • Created an ensemble of multiple keyword extraction algorithms to detect better keywords
-  • Tuned scoring algorithms for ranking search results from various sources
+## Projects
 
-OPEN SOURCE
+### Sidekick
 
-  • TruffleRuby — Implemented missing BigDecimal methods: https://github.com/oracle/truffleruby/commit/dbacbc96ff07bb774a54b3883b35e74d2fb52708
-  • rlbot-rust — Added support for flatbuffers-based foreign functions: https://github.com/RLBot/rlbot-rust/pull/1
-  • Radicale — Added support for http-based authentication: https://github.com/Kozea/Radicale/pull/15
-  • rust-ws — Retired: Early WebSockets implementation in Rust
+Asynchronous software development agent
+Repository: https://github.com/sidedotdev/sidekick
 
-EDUCATION
+Overview:
+
+• Designed for professional software engineers with large existing codebases
+• Comparable to commercial agentic dev tools, despite being a solo side project
+• Being used by coworkers at Remitly alongside other agentic AI tools
+
+Development Process:
+
+• Started building the agent when LLMs weren't capable enough (GPT-3.5 era),
+  allowing it to quickly leverage smarter models as they became available
+• Dogfooded to build itself, producing a valuable stream of continuous feedback
+  in a complex, growing codebase (reaching 70K lines of Go, TypeScript, and Vue)
+• Continuously refined based on literature review and ideas from failure modes
+  observed or opportunities identified while dogfooding
+• Gathered feedback from coworkers at Remitly performing real-world tasks across
+  a diverse set of codebases
+
+Noteworthy Features:
+
+• Human-in-the-loop system with Kanban UI for managing parallel async
+  agents, enabling engineers to manage multiple workstreams easily
+• Built-in planning and requirements analysis with approval gates, to improve
+  adherence to developer intent
+• Sophisticated retrieval system, based on embeddings of code signatures for
+  token-efficient code context localization prior to further agentic tool calls
+• Hierarchical verification system for high-quality environmental feedback, with
+  a strong emphasis on testing, improving the quality of final artifacts and
+  reducing the end-to-end developer effort required to complete tasks
+• Code hallucination detection based on fuzzy match to provided context
+• LSP integration for auto-fixing and retrieval of references
+• Client/server architecture for flexibility in deployment and UX surfaces
+
+### Brick
+
+Bot that plays Rocket League, a multi-player physics-based car soccer game
+Repository: https://github.com/ehsanul/brick
+Blog Post: https://ehsanul.com/making-a-rocket-league-bot/
+
+• Reverse-engineered and simulated physics of the game for prediction
+• Implemented and extended hybrid A* algorithm for move planning
+
+### Open Source Contributions
+
+• TruffleRuby — Implemented missing BigDecimal methods:
+  https://github.com/oracle/truffleruby/commit/dbacbc96ff07bb774a54b3883b35e74d2fb52708
+• rlbot-rust — Added support for flatbuffers-based foreign functions:
+  https://github.com/RLBot/rlbot-rust/pull/1
+• Radicale — Added support for http-based authentication:
+  https://github.com/Kozea/Radicale/pull/15
+• rust-ws — Retired: Early WebSockets implementation in Rust:
+  https://github.com/ehsanul/rust-ws
+
+## Education
 
   May 2010   Bachelor of Science in Mechanical Engineering
              New Jersey Institute of Technology, Newark, New Jersey
 
-SOCIETIES AND AWARDS
+## Societies & Awards
 
   • International Student Presidential Scholarship at NJIT
   • Albert Dorman Honors College
   • Phi Eta Sigma National Honors Society
-  • Two Certificates of Excellence from Cambridge University for the highest marks obtained nationally in both Mathematics and Economics in Saudi Arabia in the A-Levels Final Exam
+  • Two Certificates of Excellence from Cambridge University for the highest
+    marks obtained nationally in both Mathematics and Economics in Saudi Arabia
+    in the A-Levels Final Exam
